@@ -11,8 +11,7 @@ packer(name="gary", num=42, farts=None)
 unpacker(**{"first_name": "gary", "last_name": "gary"})
 
 
-def courses(teachers):
-    course_list = []
-    for value in teachers.values():
-        course_list += value #why not append?
-    return
+course_minutes = {"Python Basics": 232, "Django Basics": 237, "Flask Basics": 189, "Java Basics": 133}
+
+for course, minutes in course_minutes.items():
+    print("{} is {} minutes long.".format(course, minutes))
